@@ -4,11 +4,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        main{
+            display: flex;
+        }
+    </style>
 </head>
 
 <body>
+    <main>
+        <div class="side-menu-all">
+            <h2>
+                Company
+            </h2>
+            <div class="side-menu-container">
+                <div>
+                    <img src="./resourse/dashboard_gray.svg" alt="dashboard_gray.svg">
+                    <a>Dashboard</a>
+                </div>
+                <div>
+                    <img src="./resourse/account_gray.svg" alt="account_gray.svg">
+                    <a>User Profile</a>
+                </div>
+                <div>
+                    <img src="./resourse/map_gray.svg" alt="map_gray.svg">
+                    <a>Maps</a>
+                </div>
+                <div>
+                    <img src="./resourse/notify_gray.svg" alt="notify_gray.svg">
+                    <a>Notifications</a>
+                </div>
+                <div>
+                    <img src="./resourse/support_gray.svg" alt="support_gray.svg">
+                    <a>Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="admin-panel-all">
+            <h2>
+                Dashboard
+            </h2>
+            <div class="admin-panel-container">
+                <div class="admin-panel-small-items">
+                    <div class="admin-panel-item-used-space">
+                        <div>
+                            Used Space
+                        </div>
+                        <div>
+                            49/50 GB
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/alert.png" alt="alert.png">
+                            <div>
+                                Get more space
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/data_white.svg" alt="data_white.svg">
+                        </div>
+                    </div>
+                    <div class="admin-panel-item-revenue">
+                        <div>
+                            Revenue
+                        </div>
+                        <div>
+                            $ 34,245
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/calendar.png" alt="calendar.png">
+                            <div>
+                                Last 24 Hours
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/shop_white.svg" alt="shop_white.svg">
+                        </div>
+                    </div>
+                    <div class="admin-panel-item-fixed-issues">
+                        <div>
+                            Fixed Issues
+                        </div>
+                        <div>
+                            75
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/down.png" alt="down.png">
+                            <div>
+                                Tracked from GitHub
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/tag_white.svg" alt="tag_white.svg">
+                        </div>
+                    </div>
+                    <div class="admin-panel-item-followers">
+                        <div>
+                            Followers
+                        </div>
+                        <div>
+                            + 245
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/time.png" alt="time.png">
+                            <div>
+                                Just updates
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/paperplane_white.svg" alt="paperplane_white.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-panel-medium-items">
+                    <div class="admin-panel-item-daily-sales">
+                        <div>
+                            Daily Sales
+                        </div>
+                        <div>
+                            55% increase in today sales
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/time.png" alt="time.png">
+                            <div>
+                               updated 4 minutes ago
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/graphics.svg" alt="graphics.svg">
+                        </div>
+                    </div>
+                    <div class="admin-panel-item-email-subscriptions">
+                        <div>
+                            Email Subscriptions
+                        </div>
+                        <div>
+                            Last Campaign Performance
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/time.png" alt="time.png">
+                            <div>
+                                campaign sent 2 days ago
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/graphics.svg" alt="graphics.svg">
+                        </div>
+                    </div>
+                    <div class="admin-panel-item-completed-tasks">
+                        <div>
+                            Completed Tasks
+                        </div>
+                        <div>
+                            Last Campaign Performance
+                        </div>
+                        <div class="item-footer">
+                            <img src="./resourse/time.png" alt="time.png">
+                            <div>
+                                Campaign event 2 days ago
+                            </div>
+                        </div>
+                        <div class="item-block-absolute">
+                            <img src="./resourse/graphics.svg" alt="graphics.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-panel-large-items">
+                    <div class="admin-panel-item-all-tasks">
+                        <div class="item-large-block-absolute-tasks">
+                            <div>
+                                Tasks:
+                            </div>
+                            <div>
+                                <img src="./resourse/bug.svg" alt="bug.svg">
+                                <div>
+                                    Bugs
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./resourse/web.svg" alt="web.svg">
+                                <div>
+                                    Website
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./resourse/cloud.svg" alt="cloud.svg">
+                                <div>
+                                    Server
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Tasks list -->
+                        <div>
+                            Sign contract for "What are conference organizers afraid of?"
+                        </div>
+                        <div>
+                            Lines From Great Greece Literature? Or E-mails From My Boss?
+                        </div>
+                        <div>
+                            Sign contract for "What are conference organizers afraid of?"
+                        </div>
+                        <div>
+                            Sign contract for "What are conference organizers afraid of?"
+                        </div>
+
+                    </div>
+                    <div class="admin-panel-item-employee-stats">
+                        <div class="item-large-block-absolute-stats">
+                            <div>
+                                Employee Stats
+                            </div>
+                            <div>
+                                New employees on 19th September, 2019
+                            </div>
+                        </div>
+
+                        <!-- Stats list -->
+                        <div>
+                            ID
+                        </div>
+                        <div>
+                            Name
+                        </div>
+                        <div>
+                            Salary
+                        </div>
+                        <div>
+                            Country
+                        </div>
+                       <div>Dakota Rice</div>
+                       <div>$36.738</div>
+                       <div>Niger</div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <div class="footer-left-side">
+                    <a>
+                        About
+                    </a>
+                    <a>
+                        Blog
+                    </a>
+                    <a>
+                        Licenses
+                    </a>
+                </div>
+                <div class="footer-right-side">
+                    2019 - made with love
+                </div>
+            </footer>
+        </div>
+    </main>
 </body>
 
 </html>
