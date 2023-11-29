@@ -5,142 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0px;
-        }
-
-        main {
-            display: flex;
-        }
-
-        /* Left side block */
-        .side-menu-all {
-            flex-basis: 30%;
-            height: 100vh;
-            border-right: 3px gray solid;
-            padding: 30px 0px;
-            box-sizing: border-box;
-            position: fixed;
-            width: 300px;
-        }
-        .side-menu-all h2 {
-            border-bottom: 2px gray solid;
-            padding: 0px 30px 30px;
-            margin: 0px;
-        }
-        .side-menu-container {
-            list-style-type: none;
-            display: flex;
-            flex-direction: column;
-            padding: 0px;
-            margin-top: 30px;
-        }
-        .side-menu-container>li a {
-            text-decoration: none;
-            padding: 10px 30px;
-            display: flex;
-            align-items: center;
-            gap: 5%;
-        }
-        .side-menu-container>li img {
-            height: 24px;
-            width: auto;
-        }
-
-        /* Right side block */
-        .admin-panel-all {
-            background-color: rgb(234, 234, 234);
-            flex-grow: 1;
-            padding: 30px 0px;
-            margin-left: 300px;
-        }
-        .admin-panel-all>h2{
-            margin-top: 0px;
-
-        }
-        .admin-panel-all>* {
-            margin-left: 30px;
-        }
-
-        .admin-panel-all>*:not(hr) {
-            margin-right: 30px;
-        }
-
-        /* Main block */
-        .admin-panel-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 80px;
-        }
-
-        .admin-panel-container>div {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-        }
-        
-        .admin-panel-container>div>div {
-            -webkit-box-shadow: 2px 2px 4px 3px rgba(176, 176, 176, 1);
-            -moz-box-shadow: 2px 2px 4px 3px rgba(176, 176, 176, 1);
-            box-shadow: 2px 2px 4px 3px rgba(176, 176, 176, 1);
-            background-color: white;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            flex-grow: 1;
-            flex-shrink: 1;
-        }
-        .admin-panel-small-items>div{
-            flex-basis: 25%;
-        }
-        .admin-panel-medium-items>div{
-            flex-basis: 33.33%;
-        }
-        .admin-panel-large-items>div{
-            flex-basis: 50%;
-        }
-        .item-top{
-            display: flex;
-            justify-content: flex-end;
-            background-color: aquamarine;
-        }
-        .item-footer{
-            display: flex;
-            align-items: center;
-        }
-        .admin-panel-small-items .item-top-left {
-            -webkit-box-shadow: 3px 3px 2px 0px rgba(176, 176, 176, 1);
-            -moz-box-shadow: 3px 3px 2px 0px rgba(176, 176, 176, 1);
-            box-shadow: 3px 3px 2px 0px rgba(176, 176, 176, 1);
-            background-color: chartreuse;
-            position: absolute;
-            padding: 20px;
-            top: -40px;
-            left: 20px;
-        }
-        .admin-panel-small-items .item-top-left img{
-            height: 40px;
-            width: auto;
-        }
-
-        .admin-panel-small-items .item-footer {
-            align-items: flex-start;
-        }
-
-        .admin-panel-small-items .item-footer img {
-            height: 14px;
-            width: auto;
-        }
-
-        .admin-panel-container img {
-            height: 40px;
-            width: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -275,11 +140,16 @@
                 </div>
                 <div class="admin-panel-medium-items">
                     <div class="admin-panel-item-daily-sales">
-                        <div>
-                            Daily Sales
-                        </div>
-                        <div>
-                            55% increase in today sales
+                        <div class="medium-item-top">
+                            <div class="medium-item-image">
+                                <img src="./resourse/graphics.svg" alt="graphics.svg">
+                            </div>
+                            <div>
+                                Daily Sales
+                            </div>
+                            <div>
+                                55% increase in today sales
+                            </div>
                         </div>
                         <div class="item-footer">
                             <img src="./resourse/time.png" alt="time.png">
@@ -287,16 +157,18 @@
                                 updated 4 minutes ago
                             </div>
                         </div>
-                        <div class="item-top-left">
-                            <img src="./resourse/graphics.svg" alt="graphics.svg">
-                        </div>
                     </div>
                     <div class="admin-panel-item-email-subscriptions">
-                        <div>
-                            Email Subscriptions
-                        </div>
-                        <div>
-                            Last Campaign Performance
+                        <div class="medium-item-top">
+                            <div class="medium-item-image">
+                                <img src="./resourse/graphics.svg" alt="graphics.svg">
+                            </div>
+                            <div>
+                                Email Subscriptions
+                            </div>
+                            <div>
+                                Last Campaign Performance
+                            </div>
                         </div>
                         <div class="item-footer">
                             <img src="./resourse/time.png" alt="time.png">
@@ -304,25 +176,24 @@
                                 campaign sent 2 days ago
                             </div>
                         </div>
-                        <div class="item-top-left">
-                            <img src="./resourse/graphics.svg" alt="graphics.svg">
-                        </div>
                     </div>
                     <div class="admin-panel-item-completed-tasks">
-                        <div>
-                            Completed Tasks
-                        </div>
-                        <div>
-                            Last Campaign Performance
+                        <div class="medium-item-top">
+                            <div class="medium-item-image">
+                                <img src="./resourse/graphics.svg" alt="graphics.svg">
+                            </div>
+                            <div>
+                                Completed Tasks
+                            </div>
+                            <div>
+                                Last Campaign Performance
+                            </div>
                         </div>
                         <div class="item-footer">
                             <img src="./resourse/time.png" alt="time.png">
                             <div>
                                 Campaign event 2 days ago
                             </div>
-                        </div>
-                        <div class="item-top-left">
-                            <img src="./resourse/graphics.svg" alt="graphics.svg">
                         </div>
                     </div>
                 </div>
