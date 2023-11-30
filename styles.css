@@ -85,8 +85,6 @@ hr{
     display: flex;
     flex-direction: column;
     position: relative;
-    flex-grow: 1;
-    flex-shrink: 1;
 }
 .admin-panel-small-items>div{
     justify-content: space-between;
@@ -125,9 +123,7 @@ hr{
     border-top: 1px rgb(182, 182, 182) solid;
     padding-top: 15px;
     align-items: flex-end;
-    /* flex-basis: 40%; */
     height: 20px;
-    /* border: 2px black solid; */
 }
 .item-footer div{
     font-size: 12px;
@@ -154,14 +150,6 @@ hr{
 .admin-panel-item-followers .item-top-left{
     background-color: rgb(195,32,86);
 }
-/* .admin-panel-small-items .item-top-left img {
-    height: 40px;
-    width: auto;
-} */
-/* .admin-panel-container img {
-    height: 30px;
-    width: auto;
-} */
 .item-footer>img {
     height: 14px;
     width: auto;
@@ -190,14 +178,8 @@ hr{
 .admin-panel-medium-items>div:nth-child(3) .medium-item-image{
     background-color: rgb(38,75,147);
 }
-.medium-item-top{
-    /* flex-basis: 60%; */
-}
 
 /* Large items */
-.admin-panel-large-items{
-    /* margin-bottom: 40px; */
-}
 .admin-panel-large-items>div{
     flex-basis: 50%;
     width: 50%;
@@ -216,10 +198,11 @@ hr{
     top: -20px;
     margin: 0px;
     display: flex;
+    justify-content: space-between;
 }
 .item-large-block-absolute-tasks{
     background-color: rgb(216,158,36);
-    gap: 40px;
+    gap: 10px;
     align-items: center;
     flex-shrink: 1;
 
@@ -232,7 +215,67 @@ hr{
 .item-large-block-absolute-tasks>div{
     display: flex;
     align-items: center;
-    /* gap: 10px; */
-    /* padding: 10px; */
+    gap: 10px;
+    padding: 10px;
     background-color: rgb(135, 99, 22);
+}
+.admin-panel-item-all-tasks ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.admin-panel-item-all-tasks li{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 20px auto 20px 20px;
+    gap: 20px;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+.admin-panel-item-all-tasks li:last-child{
+    border-bottom: none;
+}
+.admin-panel-item-all-tasks li img{
+    height: 20px;
+    width: auto;
+}
+.admin-panel-item-employee-stats table{
+    border-collapse: collapse;
+}
+.admin-panel-item-employee-stats th{
+    color: rgb(108,189,200);
+    font-weight: normal;
+    text-align: left;
+}
+.admin-panel-item-employee-stats td {
+    border: 2px solid rgb(182, 182, 182);
+    border-width: 1px 0 0px 0;
+}
+th,
+td {
+    padding: 10px;
+}
+
+/* Footer */
+footer, footer nav, .footer-right-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(60, 55, 55);
 }
