@@ -2,6 +2,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     color: rgb(60, 55, 55);
+    font-size: 14px;
+}
+h3{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 16px;
 }
 main {
     display: flex;
@@ -44,6 +51,23 @@ hr{
 .side-menu-container>li img {
     height: 24px;
     width: auto;
+}
+.side-menu-container a{
+    text-decoration: none;
+    color: rgb(60, 55, 55);
+    margin: 0px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Transitions in side menu */
+.side-menu-container a:hover{
+    background-color: rgb(195,32,86);
+    color: white;
+}
+.side-menu-container li img {
+    transition: filter 0.3s ease;
+}
+.side-menu-container li:hover img {
+    filter: brightness(0) invert(1);
 }
 
 /* Right side block */
@@ -186,7 +210,6 @@ hr{
 }
 .admin-panel-large-items>div>div:first-child *{
     color: white;
-    font-size: 16px;
 }
 .admin-panel-large-items .item-large-block-absolute-tasks,
 .admin-panel-large-items .item-large-block-absolute-stats {
@@ -197,17 +220,18 @@ hr{
     padding: 10px;
     top: -20px;
     margin: 0px;
-    display: flex;
-    justify-content: space-between;
 }
 .item-large-block-absolute-tasks{
     background-color: rgb(216,158,36);
-    gap: 10px;
+    /* gap: 10px; */
     align-items: center;
     flex-shrink: 1;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .item-large-block-absolute-stats{
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(38,75,147);
     flex-direction: column;
     gap: 10px;
@@ -217,7 +241,9 @@ hr{
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background-color: rgb(135, 99, 22);
+}
+.item-large-block-absolute-tasks>div:nth-child(2){
+    background-color: rgb(222,173,73);
 }
 .admin-panel-item-all-tasks ul{
     margin: 0;
@@ -278,4 +304,18 @@ footer a{
     text-transform: uppercase;
     text-align: center;
     color: rgb(60, 55, 55);
+}
+
+/* Adaptive */
+@media screen and (min-width: 801px) and (max-width: 1000px){
+
+}
+@media screen and (min-width: 651px) and (max-width: 800px){
+
+}
+@media screen and (min-width: 501px) and (max-width: 650px){
+
+}
+@media screen and  (max-width: 500px){
+    
 }
